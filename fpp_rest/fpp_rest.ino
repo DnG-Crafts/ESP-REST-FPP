@@ -87,8 +87,12 @@ void loop() {
 /*
      --------------------GET examples-------------------- 
      
-     play fseq by name
-     getRESTCommand("/api/command/FSEQ Effect Start/blue_button");
+     play sequence by name without the .fseq extension, replace "SEQUENCENAME" with the name of the sequence you want to play
+     getRESTCommand("/api/command/FSEQ Effect Start/SEQUENCENAME");
+	 
+	 
+     stop sequence
+     getRESTCommand("/api/command/Effects Stop");
 
 
      start playlist, replace "PLAYLISTNAME" with the name of the playlist you want to start
