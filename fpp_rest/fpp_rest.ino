@@ -47,8 +47,9 @@ void setup() {
 
 void loop() {
 
-  if (digitalRead(Button1) == LOW){  
-    getRESTCommand("/api/playlist/show/start");
+  if (digitalRead(Button1) == LOW){
+    String playlist = "PLAYLISTNAME";
+    getRESTCommand("/api/playlist/" + playlist + "/start");
     delay(1000);
   }
 
